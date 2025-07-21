@@ -1,0 +1,2 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\11750\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DSDKCONFIG='c:\Users\11750\Downloads\ESP32-S3-Touch-LCD-2-Demo\ESP-IDF\02_lvgl_qmi8658\sdkconfig' -DCCACHE_ENABLE=1 C:\Users\11750\Downloads\ESP32-S3-Touch-LCD-2-Demo\ESP-IDF\02_lvgl_qmi8658
+warning: the value 'y' is invalid for SOC_SDM_GROUPS (defined at C:/Users/11750/esp/v5.5-rc1/esp-idf\./components/soc/esp32s3/include/soc/Kconfig.soc_caps.in:858), which has type int -- assignment ignored
