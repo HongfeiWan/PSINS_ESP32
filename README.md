@@ -1,4 +1,4 @@
-# ESP32-S3 Touch LCD 2 GNSS LVGL Demo
+# ESP32-S3 Touch LCD 2 PSINS Demo
 
 ## 项目简介
 
