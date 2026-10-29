@@ -1,4 +1,0 @@
-dependencies:
-  idf: ">=4.4"
-  lvgl/lvgl: "~8.4.0"
-  espressif/esp_lcd_touch_cst816s: "^1.0.3"

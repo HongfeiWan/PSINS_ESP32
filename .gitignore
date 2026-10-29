@@ -1,4 +1,4 @@
-# Existing tracked legacy files remain tracked.
+# Build output and private runtime files.
 **/.pio/
 **/__pycache__/
 *.py[cod]
