@@ -1,0 +1,38 @@
+﻿INSmini S3 R1 — 5片全代贴制造审核说明
+更新：2026-10-16
+
+交付状态
+原理图、PCB和制板文件已完成；嘉立创原生PCB严格DRC为0项。BOM与CPL均为47个器件、24种料号，全部顶面装配。原理图180个已连接引脚与PCB焊盘网络逐项核对无差异。原理图保留2项单引脚网络提示：UART0_TX/RX在PCB背面裸测试点引出。未提交制造订单或付款，尚无实际SMT报价、库存锁定或首板实测结果。
+
+尺寸与工艺
+成品PCB板框35×43mm；ESP32模块天线伸出顶边约5.45mm，TF卡座前沿伸出下边约1.75mm，USB口前沿伸出约0.6mm；组件外包尺寸约35×50.2mm。TF卡和线缆插入后的尺寸另计。四层FR4、1.6mm、外层1oz，优先普通四层7628叠层（L1-L2约0.18–0.20mm，实际以下单确认的叠层为准）；L1顶层器件/信号，L2连续GND铺铜，L3辅助信号与电源，L4底层信号/地。普通通孔0.3/0.6mm，无盲埋孔。两处M2安装孔内径2.2mm。
+
+贴装数量和下单文件
+本BOM是“单板用量”，总共47件；在平台选择贴片数量5，不要把BOM数量自行乘5。CPL也是单板坐标，47条、T面、毫米单位；Y坐标为负来自嘉立创EDA原点，与Gerber一致，不要自行翻转。贴装包括连接器、卡座、按键和所有阻容，用户不承担补焊。USB固定脚和卡座支脚的具体焊接工艺、供料损耗及型号可贴状态由平台匹配确认。
+优先经济型。嘉立创2026-09-21更新的官方说明中，经济型多层板最小尺寸为10×10mm，标准型为70×70mm，所以本板不强制放大到70×70mm。若夹持需要工艺边，优先由工厂为单板增加可拆工艺边；成品数量仍为5片。禁止把带伸出天线的顶边直接紧贴实心工艺边；天线区域需锣空、无铜并保留装配净空；USB和TF卡座伸出下板边的前沿也须避让工艺边。不得因多联拼板而未经确认增加成品数量。
+
+换料费用控制
+使用ESP32和GNSS模组，省去独立晶振、Flash及裸GNSS射频外围；USB使用ESP32原生接口，省去USB串口芯片；常用阻容统一0603/0805和基础库料号；两个滤波磁珠共用同一料号；两颗按键共用同一料号；单面装配。
+按EDA库标签统计为13种Basic、11种Extended。国内SMT实际类别、优选合作减免与库存需在订单匹配页确认。若11种扩展料均按经济型20元/种收费，换料费参考为220元/单，分5片约44元/片，尚未计工程费、元件、PCB、运费等，也未扣优惠。因此5片全代贴不能保证附件中的80–100元/片目标。不要为此小批量自动购买整盘元件；先比较平台经济型与标准型的实际总价及减免情况。
+
+硬件功能与使用
+ESP32-S3-WROOM-1-N8（无PSRAM）+ LSM6DS3TR-C + ATGM336H-5N31 + microSD卡座。USB-C 5V供电，SY8089降压至名义3.327V；无电池和充电功能。建议使用稳定5V/1A供电；电脑口供电时应验证Wi-Fi发送与写卡同时发生的电源跌落。
+IMU采用SPI，INT1接GPIO14用于DRDY/FIFO中断；INT2不使用。GNSS UART与1PPS保留。1PPS用于本地计时校准，IMU采样仍需中断时间戳和延迟标定，不等于硬同步。
+J3为外置GNSS天线接口，板上通过47nH电感由模组VCC_RF提供天线偏置，适配3.3V有源天线，天线电流不超过50mA。天线、转接线、TF存储卡不包含在板上BOM中。
+J4为1.0mm间距10针JST SH贴片座：1 GND，2 3V3，3 SPI_SCK，4 SPI_MOSI，5 SPI_MISO，6 EXT_CS，7 EXT_DRDY，8 GNSS_PPS，9 ENC_A，10 ENC_B。按1号焊盘标记辨认方向。所有信号仅为3.3V电平，外部5V编码器需要电平转换。外部IMU共用SPI且使用独立片选。
+TP1 UART0_TX、TP2 UART0_RX、TP3 EN、TP4 BOOT、TP5 GND、TP6 3V3，均在背面，是裸测试点，不需购买器件。进入下载模式：按住BOOT，点按RESET，再释放BOOT。GPIO35/36/37用于TF卡，禁止不核对引脚就替换成占用这些脚的PSRAM模组。
+
+首板验证
+本包不含固件或实物测试结论。首板先限流上电，检查3V3、V_IMU、V_GNSS和温升，再验证USB下载、IMU WHO_AM_I/中断/FIFO、GNSS串口与PPS、TF卡持续写入以及外部接口。重点测量Wi-Fi发射与写卡时的跌落、GNSS电源纹波及收星信噪比。GNSS射频短线已按四层叠层作初始尺寸设计，但未购买阻抗管控；开板前核对实际叠层，首板验证RF表现。导航算法、姿态轴方向、Allan方差与温漂标定需在采集固件和实验阶段完成。
+
+原生工程
+INSmini_S3_R1_4L_35x43.eprj2可直接用嘉立创EDA专业版打开，包含4页原理图和PCB1。请使用最终工程，不使用旧的过程备份。Gerber、BOM、CPL须作为同一版本使用。库来源：嘉立创EDA/EasyEDA官方器件库，https://lceda.cn ，https://easyeda.com 。
+
+官方参考（查询于2026-10-16）
+贴装尺寸与工艺：https://www.jlc.com/portal/server_guide_26.html
+工艺边建议：https://www.jlc.com/portal/server_guide_41071.html
+换料费规则：https://m.jlc.com/portal/server_guide_38538.html
+制造能力：https://www.jlc.com/portal/vtechnology.html
+ESP32硬件指南：https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html
+LSM6DS3TR-C数据手册：https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf
+ATGM336H数据手册：https://datasheet.lcsc.com/datasheet/pdf/a8e35e0f413d91e4cb7a01a54db37dbc.pdf?productCode=C90770

@@ -1,0 +1,14 @@
+# Keep imported deliveries and checksum-referenced sources byte-for-byte.
+hardware/** -text
+firmware/** -text
+prebuilt/** -text
+maintenance/** -text
+integrations/** -text
+tools/** -text
+tests/** -text
+docs/insmini/** -text
+*.eprj2 binary
+*.bin binary
+*.zip binary
+*.png binary
+*.pdf binary

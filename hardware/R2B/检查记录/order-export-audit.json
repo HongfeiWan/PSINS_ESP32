@@ -1,0 +1,46 @@
+{
+  "released": false,
+  "componentCount": 53,
+  "skuCount": 25,
+  "quantityForFiveBoards": 265,
+  "skuClasses": {
+    "Basic Part": 12,
+    "Extended Part": 13
+  },
+  "assemblySide": "TOP",
+  "bomC18Group": {
+    "No.": "3",
+    "Quantity": "8",
+    "Comment": "100nF",
+    "Designator": "C3,C5,C6,C8,C10,C14,C17,C18",
+    "Footprint": "C0603",
+    "Value": "100nF",
+    "Manufacturer Part": "CC0603KRX7R9BB104",
+    "Manufacturer": "YAGEO(国巨)",
+    "Supplier Part": "C14663",
+    "Supplier": "LCSC"
+  },
+  "coordinateToleranceMm": 0.001,
+  "maxCplNativeCoordinateDifferenceMm": 1.240000003122077e-06,
+  "nativeCplAliases": [
+    {
+      "ref": "J3",
+      "nativeCplDevice": "U.FL-R-SMT-1(80)_C88374",
+      "manufacturerPart": "U.FL-R-SMT-1(80)",
+      "supplierPart": "C88374"
+    },
+    {
+      "ref": "U5",
+      "nativeCplDevice": "USBLC6-2SC6_C7519",
+      "manufacturerPart": "USBLC6-2SC6",
+      "supplierPart": "C7519"
+    }
+  ],
+  "fptNonAssemblyPadAndTestPointRecords": 203,
+  "errors": [],
+  "sourceAuditSha256": "19064d636629a8e46e192f3ad8c55777807b604bbddb1b6e04d9e4ec7b6cd350",
+  "fileSha256": {
+    "INSmini_S3_R2B_BOM_pending.csv": "6f389e46fe8ed66902888fd36cfb8262f1ce6e73a6f1b9099396943fa5d6a7ac",
+    "INSmini_S3_R2B_CPL_pending.csv": "f4119c6957ced50298d1171126f0ee5a8c329e4ff4c4de60656e7da1c242d47d"
+  }
+}

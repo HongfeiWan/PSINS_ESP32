@@ -1,0 +1,62 @@
+﻿INSmini S3 R2B | openEMS 射频仿真记录
+生成时间：2026-10-19T01:14:45.638194+00:00
+状态：已完成发布检查
+
+这次实际运行了免费的 openEMS FDTD 求解器。此前约 49.8 Ω 只是截面估算；本报告的 S 参数来自实际时域计算。
+范围：J3 天线连接器焊盘至 ATGM336H 的 RF_IN 焊盘，以及相邻 D2、L2、C18 偏置支路的 PCB 互连，频带 1.55～1.62 GHz。
+不包含外接天线、连接器内部、GNSS 模组内部和 ESP32 模组天线的三维模型；没有声称完成整板天线增益、辐射方向图、Wi-Fi/GNSS 共存或实物上电测试。
+
+一、实际修改
+D2：Nexperia PESD5V0F1BL,315 C45961 → TI TPD1E0B04DPYR C1975594，0402，标称 0.15 pF、最大 0.18 pF。按 TI DPY 焊盘图调整 PCB 焊盘并就近接地。
+C18：ANT_BIAS 对地 100 nF 0603，复用已有 Yageo C14663，补上高频偏置旁路和近地过孔。
+L2 保留原 Murata LQW15AN47NJ00D C192855 47 nH，主馈线保留直流天线偏置通路，没有增加串联隔直电容。
+53 个器件、25 种料号，基础料 12 种、扩展料 13 种。新增电容不增加独立料号，保护管替换未增加扩展料种类；实际贴装费用由工厂库存与结算决定。
+39×43 mm 四层板框保持原样；5 片全部顶面工厂贴装。原 R2 USB 修复保留。
+
+二、求解设置与可信性检查
+openEMS 官方 v0.37.0-rc3 源码/运行包；求解器显示 v0.37.0，版本与文件校验值保存在环境记录。
+实际 Gerber 四层铜、阻焊、板框与钻孔转换为几何；L1-L2 介质 0.20 mm、Dk 4.6、tanδ 0.02；外层铜厚 35 µm，铜作为 PEC。
+阻焊介电常数与孔壁镀铜厚度采用工程假设。铜导体损耗/粗糙度未直接求解，另留 0.05 dB 工程损耗余量；该余量不是严格误差上界。
+端口均为 50 Ω，参考面为 J3.1 与 U3.11 的 PCB 焊盘，接至实际 L2 地。先用均匀传输线和集总元件夹具校准端口与元件实现。
+L2 使用 Murata 原厂 S 参数拟合为无源窄带 RLC，带内最大复阻抗拟合误差约 0.047%。D2 的封装电感为假设；C18 以 100 nF、ESR 0.1 Ω、ESL 0.5 nH 建模，保守工况 ESL 为 1.5 nH。
+集总元件均只跨一个 Yee 电场边。所有射频区域镀铜过孔都检查了连续导电网格列；早期漏采孔壁的试算已排除。
+实际残余能量要求为 -60 dB，并检查端口阻抗、元件探针、无源性及最后 5% 时间窗截断敏感性。
+0.10/0.065 mm 两档网格复核通过：最大复 S 差 0.008262，最大传输幅值差 0.006396 dB。
+正反两次独立激励使用 S=B·inv(A) 提取完整两端口：最大功率奇异值平方 0.99997938，互易性复误差 2.7029433e-06。
+扩大计算区域与外部空气区的检查：通过，详见 RF_results.json。
+
+三、真实结果与未达到的目标
+完整两端口名义工况：回波损耗最小 14.680 dB，插入损耗最大 0.198 dB。
+原来设定的 15 dB 回波损耗目标没有在全频带达到。原始验证 JSON 中 returnLoss=false 保留，未降低或关闭检查来制造全绿结果。
+另列 u-blox GNSS 实现指南推荐的 10 dB 回波损耗作为样机工程参考。这不是 ATGM336H 原厂承诺的接口规格，不能把它写成产品合格认证。
+保守组合：介质厚度 0.18 mm、Dk 4.8、D2 最大 0.18 pF/假设 0.5 nH、L2 自谐振最低值折算上界、VCC_RF 射频源开路、C18 ESL 1.5 nH。只代表已采样的保守组合，并非穷尽容差的保证最坏值。
+R2 保守工况：回波损耗最小 9.614 dB，插入损耗最大 0.558 dB。
+R2B 保守工况：回波损耗最小 12.253 dB，插入损耗最大 0.315 dB；加 0.05 dB 工程余量后约 0.365 dB。
+这次保留原厂 47 nH 偏置拓扑，先用 5 片工程样机核对实际接收表现；没有为追求略高的仿真匹配指标增加额外调谐料种类。
+
+精确频点使用原始时域端口数据重新做傅里叶变换，没有把 1575 MHz 网格点误写成 1575.42 MHz：
+1561.098 MHz：S11=-15.1690 dB，S21=-0.1820 dB，S22=-15.1745 dB。
+1575.420 MHz：S11=-15.0464 dB，S21=-0.1858 dB，S22=-15.0518 dB。
+
+四、制造与实物验证边界
+仿真叠层须与国内嘉立创 7628 的 L1-L2 0.20 mm 匹配，不能静默换用不同介质厚度的叠层。Gerber ZIP 的 SHA256 见 RF_results.json；最终包必须是本次求解的几何。
+独立核对显示 USB 的 43 段走线/过孔、既有 51 个器件摆放、L2 地、底层铜与板框保持原 R2 形状。最终制造 ZIP 保留本次仿真的原始文件及校验值；原生工程重新导出时全部器件/焊盘数据相同，铜层、阻焊与钻孔的数值序列化差异不超过 2 nm。
+D2 的 0.30×0.50 mm 焊盘及 0.70 mm 中心距已写入工程封装，完整退出重开后复核通过。原生 PCB 严格 DRC 为 0 错误，原理图为 0 致命错误、0 错误、2 个原有 UART 测试口提示。逐针网表、BOM 与 CPL 已完成核对，证据见最终包的检查记录。
+ESP32 模组天线区已检查板材/四层铜让位；未用没有内部几何的模组替代模型声称完成 Wi-Fi 天线仿真。
+首板收到后依次核对限流上电、3.3 V 电源、USB 正反插下载、IMU 数据、TF 写入、GNSS 室外定位，再核对 Wi-Fi 发送时的 GNSS 表现。电磁仿真不能替代这些实物验证。
+
+五、原始证据与复现
+RF_cases.csv：各工况结果；RF_results.json：详细检查结果与制造 ZIP 哈希。
+GNSS_interconnect.s2p：完整两端口 Touchstone；R2_vs_R2B.png：前后对比；near-electric-field.png：1.57542 GHz 互连近场。
+独立验证包保留 XML、网格、原始电压/电流、元件探针、求解日志和分析源码。未收敛/错误网格的早期试算不作为结论依据。
+原厂原始 S 参数只用于私人研究归档，不放入工厂下单包；提供来源、哈希、派生拟合参数与求解结果。
+
+主要一手资料：
+openEMS 发布：https://github.com/thliebig/openEMS-Project/releases/tag/v0.37.0-rc3
+openEMS 文档：https://docs.openems.de/en/latest/python/openEMS/ports.html
+TI TPD1E0B04 数据手册：https://www.ti.com/lit/ds/symlink/tpd1e0b04.pdf
+Murata S 参数：https://www.murata.com.cn/zh-cn/tool/data/sparameterdata/sparameter-inductor
+ATGM336H 参考电路：https://datasheet.lcsc.com/datasheet/pdf/a8e35e0f413d91e4cb7a01a54db37dbc.pdf?productCode=C90770
+国内嘉立创叠层：https://www.jlc.com/portal/q6i1339.html
+u-blox GNSS 实现指南：https://content.u-blox.com/sites/default/files/SARA-R5-R4-GNSS-Implementation_AppNote_UBX-20012413.pdf
+ESP32 天线布置：https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html

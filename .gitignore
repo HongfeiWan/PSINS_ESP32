@@ -1,0 +1,14 @@
+# Existing tracked legacy files remain tracked.
+**/.pio/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+managed_components/
+records/
+private-data/
+flash-logs/
+**/local_config.h
+nvs*.bin
+*.part

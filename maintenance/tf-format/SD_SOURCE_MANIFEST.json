@@ -1,0 +1,72 @@
+{
+  "copiedUtc": "2026-10-29T01:15:52.213633+00:00",
+  "source": "Previously tested INSmini project-local Arduino 2.0.17 SD fork",
+  "files": [
+    {
+      "path": "lib/SD/INSmini-PATCH.json",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\INSmini-PATCH.json",
+      "sha256": "076b587f1ec1988e4e9e6c6d707e2f709d7512cadc16b0688af692d47f7754ea",
+      "bytes": 2127
+    },
+    {
+      "path": "lib/SD/INSmini-PATCH.txt",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\INSmini-PATCH.txt",
+      "sha256": "d8063317e3b348d0b023230cb98603a03f9cd842407db1e5af34cfaa2f4d6e58",
+      "bytes": 345
+    },
+    {
+      "path": "lib/SD/library.properties",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\library.properties",
+      "sha256": "d36625ca83ad84afcc191424902b4a8f6b88b547ff81ec7857f07673a560302b",
+      "bytes": 440
+    },
+    {
+      "path": "lib/SD/LICENSE",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "lib/SD/README.md",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\README.md",
+      "sha256": "1643cdfbe561ac9059a2552ce296c9346d36f32f425aa61b2a0689427751526e",
+      "bytes": 2885
+    },
+    {
+      "path": "lib/SD/src/SD.cpp",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\SD.cpp",
+      "sha256": "64041ed0d5d622c1271696515ae6b4caacd90dd5f43e227e396f006e01c58b9f",
+      "bytes": 2990
+    },
+    {
+      "path": "lib/SD/src/SD.h",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\SD.h",
+      "sha256": "0fd138af4c2d0a6c75fa9df5826aa8801131d3d93a7bbfb79b8021370ac3127b",
+      "bytes": 1424
+    },
+    {
+      "path": "lib/SD/src/sd_defines.h",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\sd_defines.h",
+      "sha256": "382013983d9acbf36e59bd676039cc3dfc7d27d67271fbffb7a1d457273dc441",
+      "bytes": 799
+    },
+    {
+      "path": "lib/SD/src/sd_diskio.cpp",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\sd_diskio.cpp",
+      "sha256": "b01772158f15d4da06fb97862449d5d9a52c21d7cf4ab0f61dff3b431bda4363",
+      "bytes": 24717
+    },
+    {
+      "path": "lib/SD/src/sd_diskio.h",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\sd_diskio.h",
+      "sha256": "094dcc18d6b23a23afc65442e6a1e9c71809f89a4b8e3ab7e0d6ed7a884d486e",
+      "bytes": 1263
+    },
+    {
+      "path": "lib/SD/src/sd_diskio_crc.c",
+      "source": "C:\\Users\\whf\\Documents\\Codex\\2026-10-16\\b\\firmware\\insmini-nav\\lib\\SD\\src\\sd_diskio_crc.c",
+      "sha256": "51feb4bbdb037cb57bda1d4492e9c394bcd41de02513605ca82cf1f140379c48",
+      "bytes": 4938
+    }
+  ]
+}

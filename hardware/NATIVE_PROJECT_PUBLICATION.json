@@ -1,0 +1,455 @@
+{
+  "method": "Clear only users.password in publication copies; VACUUM removes old pages. Original source files are untouched.",
+  "projects": [
+    {
+      "path": "hardware/R1/INSmini_S3_R1_4L_35x43.eprj2",
+      "original_sha256": "68c5b9b6e8414ca5da11fbcb9c5926907f951092c8d185ec53f2028790561d00",
+      "published_sha256": "424c65c3320826488aeb85ce85126e2888efd9e2318b237f756b4a60255d990a",
+      "cleared_password_rows": 1,
+      "sqlite_integrity": "ok",
+      "all_noncredential_table_fingerprints_equal": true,
+      "table_fingerprints": {
+        "attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "backups": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "block_symbol_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "boards": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branch_locks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branches": {
+          "rows": 2,
+          "sha256": "536b4037be3486829d2e9cce2ca0306318ef6c75d9019e247cdb441b0819ab37"
+        },
+        "broadcast_messages": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "categories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "component_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components_tmp": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "coppers": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_paths": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_versions": {
+          "rows": 1,
+          "sha256": "6b1a5d11bba5b6a394937e6e29b7bd85145eab9b6f2ffd44f43174c2d8104272"
+        },
+        "devices": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "documents": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "editor_caches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "history_data": {
+          "rows": 132,
+          "sha256": "04f3dfedaece9c7261eaa597431278564243c824ebe6d9e2cd34195ec6f523dc"
+        },
+        "notifications": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_history_bc0e687aca174811a750bcdd69ce941f": {
+          "rows": 41,
+          "sha256": "03f75da65efb10de188c6734667d7867c594fe1d62f661b6be95f142555a7644"
+        },
+        "project_images": {
+          "rows": 5,
+          "sha256": "e51c0b5a2a0893dd377bd2a5606814b4618f0941339f3ebebe6ab514d8214662"
+        },
+        "project_logs": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_members": {
+          "rows": 1,
+          "sha256": "58c4502327c4e525f462f9586119ccf1815905b6746bcf4037534d191bc3535d"
+        },
+        "project_structures": {
+          "rows": 96,
+          "sha256": "856b2eaef487dfb76fa78f6def6b9e106bda26d0f762384ea745246fac502ed5"
+        },
+        "projects": {
+          "rows": 1,
+          "sha256": "d33c2f2b4d6172d375dbe17b161c6d9c08c381aca1179be68867ce602c87a724"
+        },
+        "resources": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "schematics": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sqlite_sequence": {
+          "rows": 4,
+          "sha256": "f068df611db39fcc47a838723986ca28864d13ed0ce1daf19156fc4207722693"
+        },
+        "system_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_config": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "team_members": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "texts": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "users": {
+          "rows": 1,
+          "sha256": "f92fd5e5737193a8df1c4315b60eb3447bbdf0b4a91c6c4379dd1665bb433ca1"
+        }
+      }
+    },
+    {
+      "path": "hardware/R2/INSmini_S3_R2_4L_39x43.eprj2",
+      "original_sha256": "f3680fe806174dc5dad68e7ac7fe5bffbba8f81a3016394e68aa807e0eb1f44b",
+      "published_sha256": "581f37902a535067e6d5de33f33de1918d8b663d62cefe348b4406f64b22689c",
+      "cleared_password_rows": 1,
+      "sqlite_integrity": "ok",
+      "all_noncredential_table_fingerprints_equal": true,
+      "table_fingerprints": {
+        "attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "backups": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "block_symbol_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "boards": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branch_locks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branches": {
+          "rows": 2,
+          "sha256": "9e8ca3acc33674680f81f9347726e9e978c400296f474c5846456fa27be5b4e8"
+        },
+        "broadcast_messages": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "categories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "component_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components_tmp": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "coppers": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_paths": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_versions": {
+          "rows": 1,
+          "sha256": "6b1a5d11bba5b6a394937e6e29b7bd85145eab9b6f2ffd44f43174c2d8104272"
+        },
+        "devices": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "documents": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "editor_caches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "history_data": {
+          "rows": 232,
+          "sha256": "995b02a888d6d0e6951681d5ed9550a912bd11a8163a3ddb569ea58cd7439bd7"
+        },
+        "notifications": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_history_bc0e687aca174811a750bcdd69ce941f": {
+          "rows": 75,
+          "sha256": "560e247d847bf8a7a90bfbb34b744168e90641f88fc27ae718cf8568b2b8c283"
+        },
+        "project_images": {
+          "rows": 6,
+          "sha256": "b830c98464b5133299acd9bf186d8465d4f630a1bebfa2e525c2ce198b2c9d62"
+        },
+        "project_logs": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_members": {
+          "rows": 1,
+          "sha256": "58c4502327c4e525f462f9586119ccf1815905b6746bcf4037534d191bc3535d"
+        },
+        "project_structures": {
+          "rows": 186,
+          "sha256": "521f3af5ec0ed31738688880cd45cdf2fad5e8dc3fa8686577cf763483719556"
+        },
+        "projects": {
+          "rows": 1,
+          "sha256": "86578bec7a0cfeb9fe364a085fbda79e50721b3df57c6260c155439da9e59352"
+        },
+        "resources": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "schematics": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sqlite_sequence": {
+          "rows": 4,
+          "sha256": "5009885e687e7f3291fb78d2f3cd25f759171488194a7338e81dfdc73df7b6cd"
+        },
+        "system_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_config": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "team_members": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "texts": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "users": {
+          "rows": 1,
+          "sha256": "f92fd5e5737193a8df1c4315b60eb3447bbdf0b4a91c6c4379dd1665bb433ca1"
+        }
+      }
+    },
+    {
+      "path": "hardware/R2B/INSmini_S3_R2B_4L_39x43.eprj2",
+      "original_sha256": "713aee37a8595e2e0b079cb0981b81a474f52c5a103491cee1d1759e8f51809a",
+      "published_sha256": "c8d33c5847a2cf89470e1cab3ea08b6c6006ca2b9dbb88a3a3c5b477890efff4",
+      "cleared_password_rows": 1,
+      "sqlite_integrity": "ok",
+      "all_noncredential_table_fingerprints_equal": true,
+      "table_fingerprints": {
+        "attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "backups": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "block_symbol_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "boards": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branch_locks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "branches": {
+          "rows": 2,
+          "sha256": "5a658c5cccb7cf4d6087decb4705b262dfe141c6a018a18be5bab57bf57b25ae"
+        },
+        "broadcast_messages": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "categories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "component_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "components_tmp": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "coppers": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_paths": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "db_versions": {
+          "rows": 1,
+          "sha256": "6b1a5d11bba5b6a394937e6e29b7bd85145eab9b6f2ffd44f43174c2d8104272"
+        },
+        "devices": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "documents": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "editor_caches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "history_data": {
+          "rows": 288,
+          "sha256": "6c313edeef6beeccfb592bb32d1a565c9784c8f09ac5bf5fa8cb00e15ce3bcf0"
+        },
+        "notifications": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_histories": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_history_bc0e687aca174811a750bcdd69ce941f": {
+          "rows": 100,
+          "sha256": "1277d8d0ecfef9993f730356f19de9cea24f404d8f471e86e79c4144a55bc640"
+        },
+        "project_images": {
+          "rows": 13,
+          "sha256": "ace59c67f9811b4bab23c8320c7a6ffb251ce63413315d79c05bc53e8e179ccd"
+        },
+        "project_logs": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_members": {
+          "rows": 1,
+          "sha256": "58c4502327c4e525f462f9586119ccf1815905b6746bcf4037534d191bc3535d"
+        },
+        "project_structures": {
+          "rows": 235,
+          "sha256": "e220f4a28402b18545a0a55d8100471c04438c33e859ec216c0c6f95917bfab2"
+        },
+        "projects": {
+          "rows": 1,
+          "sha256": "70e3f9845065e3bb01dfb13c361a53c1432301bfa19967b039b286806eadb956"
+        },
+        "resources": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "schematics": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sqlite_sequence": {
+          "rows": 4,
+          "sha256": "cc11572a23e442552c2943abd42d5c3b4801778f09fb9f3191f7e3ba972c56fe"
+        },
+        "system_attributes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_config": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "team_members": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "texts": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "users": {
+          "rows": 1,
+          "sha256": "f92fd5e5737193a8df1c4315b60eb3447bbdf0b4a91c6c4379dd1665bb433ca1"
+        }
+      }
+    }
+  ]
+}

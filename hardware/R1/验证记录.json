@@ -1,0 +1,30 @@
+{
+  "project": "INSmini_S3_R1",
+  "date": "2026-10-16",
+  "boardMm": [
+    35,
+    43
+  ],
+  "overallApproxMm": [
+    35,
+    50.2
+  ],
+  "copperLayers": 4,
+  "assembly": "Top only",
+  "boardsToAssemble": 5,
+  "populatedDevicesPerBoard": 47,
+  "uniqueParts": 24,
+  "libraryClassCounts": {
+    "Basic Part": 13,
+    "Extended Part": 11
+  },
+  "schematicConnectedPinsAudited": 180,
+  "netMismatches": [],
+  "pcbDrcErrors": [],
+  "schematicWarningsPerProject": 2,
+  "schematicWarningReview": "UART0_TX and UART0_RX are exposed as PCB-only bare test pads, not BOM components.",
+  "int1": "GPIO14 for DRDY/FIFO",
+  "int2": "Not connected",
+  "bomCplReferenceMatch": true,
+  "cplAllTop": true
+}

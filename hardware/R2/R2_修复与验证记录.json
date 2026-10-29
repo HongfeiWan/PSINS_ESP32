@@ -1,0 +1,685 @@
+{
+  "revision": "R2",
+  "verifiedAt": "2026-10-17T01:28:49.041999+08:00",
+  "scope": "Design / native CAD / exported manufacturing files; no physical prototype measurements",
+  "board": {
+    "widthMm": 39,
+    "heightMm": 43,
+    "layers": 4,
+    "thicknessMm": 1.6,
+    "stackup": "JLC7628; L1-L2 dielectric 0.20 mm",
+    "quantity": 5,
+    "components": 52,
+    "partTypes": 25,
+    "assembly": "TOP only",
+    "antennaNotch": {
+      "widthMm": 18.6,
+      "depthMm": 1
+    }
+  },
+  "checks": {
+    "nativePcbDrc": [],
+    "schematicDrc": [
+      {
+        "type": "warn",
+        "count": 2
+      }
+    ],
+    "schematicWarningsExplained": [
+      "UART0_RX has one schematic component pin; PCB TP2 provides the external programming contact.",
+      "UART0_TX has one schematic component pin; PCB TP1 provides the external programming contact."
+    ],
+    "pinNetAgreement": {
+      "componentCount": 52,
+      "connectedSchPins": 192,
+      "noConnectSchPins": 25,
+      "mismatches": []
+    },
+    "copperConnectivity": {
+      "anchorGroups": {
+        "3V3": [
+          [
+            "C11.1",
+            "C12.1",
+            "C13.1",
+            "C14.1",
+            "C2.1",
+            "C3.1",
+            "FB1.1",
+            "J2.4",
+            "J4.2",
+            "L1.2",
+            "R11.1",
+            "R12.1",
+            "R13.1",
+            "R14.1",
+            "R15.1",
+            "R16.1",
+            "R17.1",
+            "R5.1",
+            "R6.1",
+            "R9.1",
+            "TP6",
+            "U1.2"
+          ]
+        ],
+        "ANT_BIAS": [
+          [
+            "L2.1",
+            "U3.14"
+          ]
+        ],
+        "BOOT": [
+          [
+            "R6.2",
+            "SW2.1",
+            "TP4",
+            "U1.27"
+          ]
+        ],
+        "BUCK_FB": [
+          [
+            "R10.1",
+            "R9.2",
+            "U4.5"
+          ]
+        ],
+        "CC1": [
+          [
+            "J1.A5",
+            "R1.1"
+          ]
+        ],
+        "CC2": [
+          [
+            "J1.B5",
+            "R2.1"
+          ]
+        ],
+        "EN": [
+          [
+            "C1.1",
+            "R5.2",
+            "SW1.1",
+            "TP3",
+            "U1.3"
+          ]
+        ],
+        "ENC_A": [
+          [
+            "J4.9",
+            "U1.4"
+          ]
+        ],
+        "ENC_B": [
+          [
+            "J4.10",
+            "U1.5"
+          ]
+        ],
+        "EXT_CS": [
+          [
+            "J4.6",
+            "R17.2",
+            "U1.17"
+          ]
+        ],
+        "EXT_DRDY": [
+          [
+            "J4.7",
+            "U1.12"
+          ]
+        ],
+        "GNSS_LDO": [
+          [
+            "C16.1",
+            "FB2.1",
+            "U6.5"
+          ]
+        ],
+        "GNSS_PPS": [
+          [
+            "J4.8",
+            "U1.33",
+            "U3.4"
+          ]
+        ],
+        "GNSS_RF": [
+          [
+            "D2.1",
+            "J3.1",
+            "L2.2",
+            "U3.11"
+          ]
+        ],
+        "GNSS_RST": [
+          [
+            "U1.32",
+            "U3.9"
+          ]
+        ],
+        "GNSS_RX": [
+          [
+            "U1.34",
+            "U3.3"
+          ]
+        ],
+        "GNSS_TX": [
+          [
+            "U1.35",
+            "U3.2"
+          ]
+        ],
+        "IMU_CS": [
+          [
+            "R8.2",
+            "U1.18",
+            "U2.12"
+          ]
+        ],
+        "IMU_INT1": [
+          [
+            "U1.22",
+            "U2.4"
+          ]
+        ],
+        "LED_A": [
+          [
+            "D1.1",
+            "R7.2"
+          ]
+        ],
+        "SD_CS": [
+          [
+            "J2.2",
+            "R11.2",
+            "U1.28"
+          ]
+        ],
+        "SD_DAT1": [
+          [
+            "J2.8",
+            "R14.2"
+          ]
+        ],
+        "SD_DAT2": [
+          [
+            "J2.1",
+            "R15.2"
+          ]
+        ],
+        "SD_DETECT": [
+          [
+            "J2.9",
+            "R16.2",
+            "U1.24"
+          ]
+        ],
+        "SD_MISO": [
+          [
+            "J2.7",
+            "R13.2",
+            "U1.31"
+          ]
+        ],
+        "SD_MOSI": [
+          [
+            "J2.3",
+            "R12.2",
+            "U1.29"
+          ]
+        ],
+        "SD_SCK": [
+          [
+            "J2.5",
+            "U1.30"
+          ]
+        ],
+        "SPI_MISO": [
+          [
+            "J4.5",
+            "U1.21",
+            "U2.1"
+          ]
+        ],
+        "SPI_MOSI": [
+          [
+            "J4.4",
+            "U1.19",
+            "U2.14"
+          ]
+        ],
+        "SPI_SCK": [
+          [
+            "J4.3",
+            "U1.20",
+            "U2.13"
+          ]
+        ],
+        "STATUS": [
+          [
+            "R7.1",
+            "U1.25"
+          ]
+        ],
+        "SW": [
+          [
+            "L1.1",
+            "U4.3"
+          ]
+        ],
+        "UART0_RX": [
+          [
+            "TP2",
+            "U1.36"
+          ]
+        ],
+        "UART0_TX": [
+          [
+            "TP1",
+            "U1.37"
+          ]
+        ],
+        "USB_DM": [
+          [
+            "R3.1",
+            "U5.3"
+          ]
+        ],
+        "USB_DM_CONN": [
+          [
+            "J1.A7",
+            "J1.B7",
+            "U5.4"
+          ]
+        ],
+        "USB_DM_MCU": [
+          [
+            "R3.2",
+            "U1.13"
+          ]
+        ],
+        "USB_DP": [
+          [
+            "R4.1",
+            "U5.1"
+          ]
+        ],
+        "USB_DP_CONN": [
+          [
+            "J1.A6",
+            "J1.B6",
+            "U5.6"
+          ]
+        ],
+        "USB_DP_MCU": [
+          [
+            "R4.2",
+            "U1.14"
+          ]
+        ],
+        "VBUS": [
+          [
+            "C10.1",
+            "C15.1",
+            "C17.1",
+            "C9.1",
+            "J1.A4B9",
+            "J1.B4A9",
+            "U4.1",
+            "U4.4",
+            "U5.5",
+            "U6.1",
+            "U6.3"
+          ]
+        ],
+        "V_GNSS": [
+          [
+            "C7.1",
+            "C8.1",
+            "FB2.2",
+            "U3.6",
+            "U3.8"
+          ]
+        ],
+        "V_IMU": [
+          [
+            "C4.1",
+            "C5.1",
+            "C6.1",
+            "FB1.2",
+            "R8.1",
+            "U2.5",
+            "U2.8"
+          ]
+        ]
+      },
+      "disconnectedNets": [],
+      "orphanPrimitives": []
+    },
+    "manufacturability": {
+      "bodyCount": 52,
+      "bodyOverlaps": [],
+      "bodyGapsUnder015mm": [],
+      "drillPasteOverlaps": [],
+      "drillPasteGapsUnder005mm": [],
+      "viaCount": 157,
+      "rfBodies": [
+        [
+          "J3",
+          [
+            30.1500286,
+            -0.06279641999999974,
+            32.7500234,
+            2.7876423800000003
+          ]
+        ],
+        [
+          "L2",
+          [
+            29.000000420000003,
+            3.44998802,
+            29.99999842,
+            3.9500124199999993
+          ]
+        ],
+        [
+          "U3",
+          [
+            23.099996980000004,
+            5.149997320000001,
+            33.20000218,
+            14.850003319999999
+          ]
+        ],
+        [
+          "D2",
+          [
+            31.499873499999996,
+            3.4000008199999994,
+            32.4998715,
+            3.9999996199999996
+          ]
+        ]
+      ]
+    },
+    "manufacturingExport": {
+      "boardMm": [
+        39.000001,
+        43.0
+      ],
+      "assembly": "Top",
+      "quantity": 5,
+      "bomRows": 25,
+      "populatedParts": 52,
+      "libraryClasses": {
+        "Basic Part": 12,
+        "Extended Part": 13
+      },
+      "gerberCplMismatches": [],
+      "copperFiles": [
+        "Gerber_TopLayer.GTL",
+        "Gerber_BottomLayer.GBL",
+        "Gerber_InnerLayer1.G1",
+        "Gerber_InnerLayer2.G2"
+      ],
+      "drills": {
+        "Drill_PTH_Through.DRL": {
+          "toolsMm": {
+            "T01": 0.2,
+            "T02": 0.299999,
+            "T03": 0.305001,
+            "T04": 0.799998
+          },
+          "counts": {
+            "T01": 38,
+            "T02": 72,
+            "T03": 47,
+            "T04": 4
+          }
+        },
+        "Drill_NPTH_Through.DRL": {
+          "toolsMm": {
+            "T01": 0.599999,
+            "T02": 0.999998,
+            "T03": 2.200001
+          },
+          "counts": {
+            "T01": 2,
+            "T02": 2,
+            "T03": 2
+          }
+        },
+        "Drill_PTH_Through_Via.DRL": {
+          "toolsMm": {
+            "T01": 0.2,
+            "T02": 0.299999,
+            "T03": 0.305001
+          },
+          "counts": {
+            "T01": 38,
+            "T02": 72,
+            "T03": 47
+          }
+        }
+      },
+      "nativeProjectIntegrity": "ok"
+    },
+    "criticalGeometry": {
+      "hardwareMatchesFrozenChecks": true,
+      "usbMainCopperMm": {
+        "DM": 17.613804100916447,
+        "DP": 17.61404057185633,
+        "difference": 0.00023647093988188317
+      },
+      "usbConnectorBranchSkewMm": {
+        "orientationA": -0.5,
+        "orientationB": 0.5,
+        "method": "Centerline segments; four local connector through vias, assumes equal internal ESD paths. Approximate; excludes pad and connector delay."
+      },
+      "rfMainCopperMm": 2.1760459416156746,
+      "rfMainLayers": [
+        1
+      ],
+      "rfTotalIncludingBiasAndEsdBranchesMm": 3.9297991025380528,
+      "exportedL2GroundProbes": {
+        "RF_main": {
+          "samples": 138,
+          "uncovered": []
+        },
+        "USB_main_straight": {
+          "samples": 1272,
+          "uncovered": []
+        }
+      },
+      "groundProbeScope": "RF main trace and USB straight pair y=19..29.5 mm; 0.05 mm longitudinal samples at center and both trace edges; exported G1 pour polygons; excludes physical drill holes and end-pad discontinuities.",
+      "bodyEnvelopeMm": [
+        -0.4629632600000001,
+        -5.445254539999999,
+        36.33776324,
+        44.74996892
+      ],
+      "wifiAntennaClearance": {
+        "antennaLengthMm": 6,
+        "antennaBottomYmm": 0.5547454600000004,
+        "boardNotchDepthMm": 1,
+        "notchXmm": [
+          4.2,
+          22.8
+        ],
+        "allLayerKeepoutYmm": [
+          -5.8,
+          1
+        ]
+      }
+    },
+    "impedanceEstimate": {
+      "method": "2D quasi-static finite-volume, finite domain 3.2mm x 1.4mm, 35um copper; mask Dk3.8 base20.32um/top12.7um; FR4 Dk4.6; air comparison. Approximation, excludes pad/via/bend discontinuities and factory stackup tolerance.",
+      "results": [
+        {
+          "kind": "usb",
+          "grid_mm": 0.01,
+          "plane_spacing_mm": 0.2,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 88.61245215365349,
+          "cap_pF_per_m": 65.90543112104638,
+          "elapsed_s": 0.3708381652832031
+        },
+        {
+          "kind": "usb",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.2,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 88.07049461020551,
+          "cap_pF_per_m": 65.91348610959166,
+          "elapsed_s": 2.2050600051879883
+        },
+        {
+          "kind": "usb",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.18,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 85.32261669144799,
+          "cap_pF_per_m": 68.41028974038936,
+          "elapsed_s": 2.142085552215576
+        },
+        {
+          "kind": "usb",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.22,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 90.35836843044328,
+          "cap_pF_per_m": 63.95295860384214,
+          "elapsed_s": 2.0660245418548584
+        },
+        {
+          "kind": "rf",
+          "grid_mm": 0.01,
+          "plane_spacing_mm": 0.2,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 51.12225500312854,
+          "cap_pF_per_m": 116.1605757340353,
+          "elapsed_s": 0.28371453285217285
+        },
+        {
+          "kind": "rf",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.2,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 49.79499179419988,
+          "cap_pF_per_m": 118.27336469614588,
+          "elapsed_s": 1.616788625717163
+        },
+        {
+          "kind": "rf",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.18,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 47.90235207398033,
+          "cap_pF_per_m": 123.8156495822246,
+          "elapsed_s": 1.5646235942840576
+        },
+        {
+          "kind": "rf",
+          "grid_mm": 0.005,
+          "plane_spacing_mm": 0.22,
+          "width_mm": 0.254,
+          "gap_mm": 0.1524,
+          "impedance_ohm": 51.401614501721696,
+          "cap_pF_per_m": 113.88690861250085,
+          "elapsed_s": 1.58034348487854
+        }
+      ]
+    },
+    "officialDfm": {
+      "status": "not_run",
+      "reason": "The native DFM command displayed that the separate JLC DFM client is not installed. Factory engineering review remains pending."
+    }
+  },
+  "materialChanges": {
+    "addedPartTypes": {
+      "C82942": "U6 ME6211C33M5G-N",
+      "C45961": "D2 PESD5V0F1BL,315"
+    },
+    "reusedTypesForNewCaps": {
+      "C15849": [
+        "C15",
+        "C16"
+      ],
+      "C14663": [
+        "C17"
+      ]
+    },
+    "changedC9": {
+      "from": "C15850 10uF",
+      "to": "C45783 22uF"
+    },
+    "libraryClassCounts": {
+      "Basic Part": 12,
+      "Extended Part": 13
+    },
+    "price": "Not quoted; no order placed"
+  },
+  "limitations": [
+    "Impedance calculations are quasi-static estimates, not a factory coupon or measured eye diagram.",
+    "DC supply startup, ripple, thermal behavior, actual USB flashing, GNSS reception, and Wi-Fi coexistence require physical board acceptance.",
+    "Factory engineering review must confirm the selected stackup and assembly orientation."
+  ],
+  "sources": [
+    {
+      "title": "乐鑫 ESP32-S3 模块技术规格书 v1.8（天线区 6 mm、模块引脚）",
+      "url": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+    },
+    {
+      "title": "乐鑫 PCB 设计指南（USB、模块天线）",
+      "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html"
+    },
+    {
+      "title": "ST USBLC6-2SC6（内部直通连接、VBUS 旁路）",
+      "url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+    },
+    {
+      "title": "中科微 ATGM336H 设计参考（有源天线偏置、47 nH）",
+      "url": "https://icofchina.com/d/file/xiazai/2020-09-22/35258a39d8050a9a32ade72ef103c8b5.pdf"
+    },
+    {
+      "title": "ATGM336H-5N31 对应料号手册",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/a8e35e0f413d91e4cb7a01a54db37dbc.pdf?productCode=C90770"
+    },
+    {
+      "title": "Murata LQW15AN 系列原厂规格书（由 Mouser 提供）",
+      "url": "https://www.mouser.com/datasheet/2/281/1/JELF243A_0050-1380872.pdf"
+    },
+    {
+      "title": "Nexperia PESD5V0F1BL（低电容、GPS 天线保护应用）",
+      "url": "https://assets.nexperia.com/documents/data-sheet/PESD5V0F1BL.pdf"
+    },
+    {
+      "title": "南京微盟 ME6211 手册 V14",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/d15331d096a848ac81a26b001a32d4e3.pdf?productCode=C82942"
+    },
+    {
+      "title": "ST LSM6DS3TR-C 手册",
+      "url": "https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf"
+    },
+    {
+      "title": "嘉立创四层叠层与介电参数",
+      "url": "https://www.jlc.com/portal/q6i1339.html"
+    },
+    {
+      "title": "嘉立创工艺能力",
+      "url": "https://www.jlc.com/portal/vtechnology.html"
+    }
+  ],
+  "nasArchive": {
+    "status": "not_copied",
+    "reason": "Public endpoint host-key verification and LAN public-key authentication did not complete. Local original files are retained."
+  }
+}

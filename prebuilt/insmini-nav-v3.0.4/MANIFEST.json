@@ -1,0 +1,42 @@
+{
+  "firmware": "3.0.4",
+  "releaseKind": "field_trial",
+  "imageSha256": "1af701f4f21df6d8db2bc9d11b5ca936050d16ede9b65a5e5fc6ac47ff5fee7a",
+  "files": [
+    {
+      "path": "flash-images/boot_app0.bin",
+      "bytes": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    {
+      "path": "flash-images/bootloader.bin",
+      "bytes": 14032,
+      "sha256": "876f58f4c5e2b2a3eae9e025b29096f034af99f6617edae3676817306d306dcf"
+    },
+    {
+      "path": "flash-images/firmware.bin",
+      "bytes": 964032,
+      "sha256": "1af701f4f21df6d8db2bc9d11b5ca936050d16ede9b65a5e5fc6ac47ff5fee7a"
+    },
+    {
+      "path": "flash-images/partitions.bin",
+      "bytes": 3072,
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c"
+    },
+    {
+      "path": "flash_current_board.py",
+      "bytes": 2645,
+      "sha256": "3b443ede4487199e052661efcece00493f516ea60ce961a73fbe468c8e462fcd"
+    },
+    {
+      "path": "requirements-flash.txt",
+      "bytes": 31,
+      "sha256": "cee12f0a7e432156ef9f26c2d27bef30b39eb2bec0478a95d606dc77bcd2842e"
+    },
+    {
+      "path": "rollback/firmware-3.0.3.bin",
+      "bytes": 956448,
+      "sha256": "d27cb5eb1b9c706927fe41177034dde28097090ae3507432663c3251d38a7f35"
+    }
+  ]
+}

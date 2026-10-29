@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f9fc"><title>INSmini · 实时姿态</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="top"><a class="brand" href="/" aria-label="INSmini 首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9v14l-13 7L3 23V9Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 9 13 7 13-7M16 16v14" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="#168577"/></svg><span>INSmini</span><small>惯性测量实验台</small></a><div class="connection"><i id="connectionDot"></i><span id="connection">正在连接板子</span><span id="ip" class="ip"></span></div></header>
+<main>
+<div class="page-title"><div><h1>看见板子的每一次转动</h1><p>实时六轴测量 · 局域网直连 · PSINS 数据采集</p></div><span id="device" class="device">等待设备</span></div>
+<div id="notice" class="notice" role="status" aria-live="polite">正在读取设备。请保持板子供电，电脑与板子连接同一网络。</div>
+<div class="workspace">
+<section class="attitude" aria-label="三维姿态"><div class="instrument-head"><h2>实时姿态</h2><div class="view-controls"><button id="viewReset" class="quiet">恢复视角</button><span>拖动可换视角</span></div></div>
+<div class="scene"><canvas id="scene" aria-label="随 IMU 转动的三维板子；红色 X、绿色 Y、蓝色 Z 轴"></canvas><span class="scene-note">示意模型 / IMU 原始轴</span><div id="staleOverlay" class="stale-overlay" hidden>连接中断 · 保留最后一次姿态</div></div>
+<div class="angles"><div><span>俯仰</span><strong id="pitch">—</strong><small>°</small></div><div><span>横滚</span><strong id="roll">—</strong><small>°</small></div><div><span id="yawLabel">相对航向</span><strong id="yaw">—</strong><small>°</small></div></div>
+<p id="attSource" class="heading-note">航向以本次校准为零点，会随时间漂移；尚无绝对朝向参考。</p>
+</section>
+<aside class="health" aria-label="设备状态"><h2>板子正在做什么</h2><div class="sensor-status"><span class="sensor-icon">IMU</span><div><strong id="imuHealth">等待数据</strong><span id="imuModel">LSM6DS3TR-C</span></div><i id="imuDot"></i></div>
+<dl class="readings"><div><dt>实际采样率</dt><dd id="rate">—</dd></div><div><dt>样本序号</dt><dd id="samples">—</dd></div><div><dt>传感器漏采估计</dt><dd id="missed">—</dd></div><div><dt>数据新鲜度</dt><dd id="age">—</dd></div><div><dt>运行时间</dt><dd id="uptime">—</dd></div><div><dt>Wi-Fi 信号</dt><dd id="rssi">—</dd></div><div><dt>可用内存</dt><dd id="heap">—</dd></div></dl>
+<div class="calibration"><div><strong id="calTitle">准备静止校准</strong><span id="calDetail">把板子放稳，等待 5 秒</span></div><progress id="calProgress" max="5" value="0" aria-label="静止校准进度"></progress><button id="calibrate" disabled>重新静止校准</button></div>
+<div class="other-sensors"><div><span>GNSS</span><strong id="gnss">等待读取</strong></div><div><span>PPS 脉冲</span><strong id="pps">—</strong></div><div><span>TF 卡</span><strong id="sd">—</strong></div></div>
+</aside>
+</div>
+<section class="measurements" aria-label="六轴读数"><div class="section-title"><h2>六轴读数</h2><p>加速度计显示比力，保留重力分量</p></div><div class="axis-table"><div class="axis-header"><span>测量</span><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span></div><div><span>加速度 <small>m/s²</small></span><strong id="ax">—</strong><strong id="ay">—</strong><strong id="az">—</strong></div><div><span>角速度 <small>°/s，已减零偏</small></span><strong id="gx">—</strong><strong id="gy">—</strong><strong id="gz">—</strong></div></div></section>
+<section class="nav-panel" aria-label="时间同步与组合导航"><div class="section-title"><h2>定位、对时与自主记录</h2><span id="dataMode" class="device">真实传感器</span></div>
+<div class="nav-grid"><div><h3>GNSS 与 PPS 时钟</h3><p id="position">等待有效定位</p><p id="clockState">尚未对时</p><p id="navState">组合导航等待 GNSS 和初始航向</p><p id="navPosition">—</p></div>
+<div><h3>TF 卡自主记录</h3><p id="tfState">等待卡状态</p><p id="tfDetails">断开网页也会继续记录</p><div class="record-actions"><button id="tfToggle">停止 TF 记录</button><button id="refreshSessions" class="quiet">刷新记录</button></div><label for="sessions">已保存的记录</label><select id="sessions" aria-label="已保存的 TF 记录"></select><div id="logLinks" class="log-links"></div><p id="storageNotice" role="status"></p></div></div>
+<details class="guide"><summary>设置组合导航的初始方向</summary><p>六轴 IMU 静止时无法确定真北。已知板子 Y 轴朝向时，填写相对真北顺时针的角度。也可明确将 Y 轴沿前进方向安装，直行速度达到 2 m/s 后用 GNSS 航迹初始化。保存到板子后，下次上电会沿用；每次定位前必须保持所设朝向。</p><div class="heading-form"><label for="heading">Y 轴真北方向角（°）</label><input id="heading" type="number" min="0" max="359.999" step="0.1" placeholder="0 至 359.9"><label><input id="persistHeading" type="checkbox">保存到板子，供下次离线启动使用（需先停止 TF 记录）</label><button id="setHeading">使用这个方向</button><button id="trackHeading">Y 轴沿前进方向，用直行航迹对准</button><button id="clearHeading" class="quiet">清除方向</button></div><p id="savedHeading"></p><p id="headingResult" role="status"></p></details>
+<p class="heading-note">上电后静置约 5 秒自动记录，不依赖网页或 Wi-Fi。正常运行后长按 BOOT 两秒可结束记录；红灯慢闪表示正在记录，常亮表示文件保存完成，可断电。快闪表示启动、保存中或异常，请查看状态。不要按住 BOOT 上电。无定位或 PPS 时保留本机微秒时间，不编造 UTC。此版采用原版 PSINS 15 状态松组合，GNSS 失锁后会标记惯性推算或过期。</p></section>
+<section class="record-section" aria-label="PSINS 数据记录"><div><h2>下载电脑端 IMU CSV</h2><p>网页连续接收全部 IMU 样本；独立 TF 记录同时保留 GNSS、PPS 和组合导航。</p><span id="recordInfo" role="status">静止校准完成后即可开始</span></div><div class="record-actions"><button id="record" class="primary" disabled>开始记录</button><button id="save" disabled>下载 CSV</button></div></section>
+<details class="guide"><summary>PSINS 导入与坐标轴说明</summary><p>使用配套的 <code>insmini_load.m</code>，将 CSV 转成 PSINS 的 <code>[Δθx Δθy Δθz Δvx Δvy Δvz t]</code>：角增量为 rad，速度增量为 m/s，时间为 s。导入器逐样本使用实际间隔，必要时再用 <code>imuresample</code> 重采样。</p><p>默认将传感器 X、Y、Z 定义为体坐标的右、前、上；若实际安装方向不同，在导入器中设置 <code>Cbs</code>。页面姿态采用 PSINS 的俯仰、横滚、航向顺序与标量在前的四元数。记录保留原始比力，未做六位置加速度标定。GNSS 尚待匹配天线进行实测。</p><p>记录保存在当前浏览器内存中，停止后请下载。连接暂时中断会尝试补取缓冲样本；遇到丢样、重启或校准变化，会明确中止记录。长时间采集可用配套电脑采集工具。</p></details>
+<footer><span id="firmware">INSmini</span><span>数据直接来自你的板子，页面无需外网资源</span></footer>
+</main><script src="/app.js"></script></body></html>

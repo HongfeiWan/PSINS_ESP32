@@ -1,0 +1,40 @@
+{
+  "upstream": "Arduino-ESP32 bundled SD library, framework package 3.20017.241212+sha.dcc1105b (Arduino 2.0.17)",
+  "originalDirectory": "C:\\Users\\whf\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\SD",
+  "license": "Apache-2.0, original copyright headers retained",
+  "changes": "Only add vTaskDelay(1) after completed sector data+CRC read and completed write data response in sdReadBytes/sdWriteBytes. Keep 1 MHz SPI, 512-byte writes, timeouts, CRC and watchdog unchanged. Project-local override; global framework unchanged.",
+  "files": [
+    {
+      "path": "src/SD.cpp",
+      "upstreamSha256": "64041ed0d5d622c1271696515ae6b4caacd90dd5f43e227e396f006e01c58b9f",
+      "projectSha256": "64041ed0d5d622c1271696515ae6b4caacd90dd5f43e227e396f006e01c58b9f"
+    },
+    {
+      "path": "src/SD.h",
+      "upstreamSha256": "0fd138af4c2d0a6c75fa9df5826aa8801131d3d93a7bbfb79b8021370ac3127b",
+      "projectSha256": "0fd138af4c2d0a6c75fa9df5826aa8801131d3d93a7bbfb79b8021370ac3127b"
+    },
+    {
+      "path": "src/sd_defines.h",
+      "upstreamSha256": "382013983d9acbf36e59bd676039cc3dfc7d27d67271fbffb7a1d457273dc441",
+      "projectSha256": "382013983d9acbf36e59bd676039cc3dfc7d27d67271fbffb7a1d457273dc441"
+    },
+    {
+      "path": "src/sd_diskio.cpp",
+      "upstreamSha256": "0401e23009f06e3a418470a144403e89727f3d007b1d16d429dc370ce8bdc5f0",
+      "projectSha256": "b01772158f15d4da06fb97862449d5d9a52c21d7cf4ab0f61dff3b431bda4363"
+    },
+    {
+      "path": "src/sd_diskio.h",
+      "upstreamSha256": "094dcc18d6b23a23afc65442e6a1e9c71809f89a4b8e3ab7e0d6ed7a884d486e",
+      "projectSha256": "094dcc18d6b23a23afc65442e6a1e9c71809f89a4b8e3ab7e0d6ed7a884d486e"
+    },
+    {
+      "path": "src/sd_diskio_crc.c",
+      "upstreamSha256": "51feb4bbdb037cb57bda1d4492e9c394bcd41de02513605ca82cf1f140379c48",
+      "projectSha256": "51feb4bbdb037cb57bda1d4492e9c394bcd41de02513605ca82cf1f140379c48"
+    }
+  ],
+  "licenseSource": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "licenseSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+}

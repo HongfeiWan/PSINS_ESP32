@@ -1,0 +1,195 @@
+{
+  "physicalRecordsCompared": 3329,
+  "componentPadsCompared": 227,
+  "componentCount": 53,
+  "metadataChanges": [
+    {
+      "id": "e255456ed0257e17",
+      "before": {
+        "Unique ID": "gge46",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": "$4I2"
+      },
+      "after": {
+        "LCSC Part Name": "",
+        "Supplier Footprint": "",
+        "JLCPCB Part Class": "",
+        "Datasheet": "",
+        "Pins Structure": "",
+        "Pitch": "",
+        "Mounting Type": "",
+        "Reference Series": "",
+        "Number of Pins": "",
+        "Number of Rows": "",
+        "Number of PINs Per Row": "",
+        "Row Spacing": "",
+        "Current Rating": "",
+        "Contact Material": "",
+        "Contact Plating": "",
+        "Operating Temperature": "",
+        "Voltage Rating": "",
+        "Plastic Material": "",
+        "Flame Retardant Rating": "",
+        "Supplementary Features": "",
+        "Color": "",
+        "Z-Height of the Board": "",
+        "X-Length of Bottom Edge on Board (Spacing Line)": "",
+        "Y-Width of Bottom Edge on Board": "",
+        "Description": "",
+        "Unique ID": "gge46",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": "$4I18"
+      }
+    },
+    {
+      "id": "0a66e37fd1c20b36",
+      "before": {
+        "Unique ID": "gge51",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": ""
+      },
+      "after": {
+        "LCSC Part Name": "",
+        "Supplier Footprint": "",
+        "JLCPCB Part Class": "",
+        "Datasheet": "",
+        "Polarity": "",
+        "Reverse Stand-Off Voltage (Vrwm)": "",
+        "Clamping Voltage": "",
+        "Peak Pulse Current (Ipp)": "",
+        "Peak Pulse Power Dissipation (Ppp)": "",
+        "Voltage - Breakdown": "",
+        "Reverse Leakage Current (Ir)": "",
+        "Number of Channels": "",
+        "Operating Temperature": "",
+        "level of protection": "",
+        "Type": "",
+        "Junction Capacitance": "",
+        "Description": "",
+        "Unique ID": "gge51",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": "$6I26"
+      }
+    },
+    {
+      "id": "2dd24b8808cc4b67",
+      "before": {
+        "Unique ID": "gge53",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": ""
+      },
+      "after": {
+        "LCSC Part Name": "",
+        "Supplier Footprint": "",
+        "JLCPCB Part Class": "",
+        "Datasheet": "",
+        "Tolerance": "",
+        "Voltage Rating": "",
+        "Temperature Coefficient": "",
+        "Description": "",
+        "Unique ID": "gge53",
+        "Reuse Block": "",
+        "Group ID": "",
+        "Channel ID": "$6I25"
+      }
+    }
+  ],
+  "floatingSerializationOnlyRecords": [
+    "[\"POURED\",\"88bd778c6c70d023\"]",
+    "[\"POURED\",\"6338e4644d063739\"]",
+    "[\"POURED\",\"eb8591a56bd4d434\"]"
+  ],
+  "nativePcbDrc": [],
+  "mainSchematicDrc": [
+    {
+      "type": "warn",
+      "count": 2
+    }
+  ],
+  "manufacturingGerberExactlyMatchesSimulation": true,
+  "nativeGeometryEquivalentAtTwoNanometres": true,
+  "regeneratedGerberToleranceMm": 2e-06,
+  "regeneratedGerberLayerChecks": {
+    "Gerber_TopLayer.GTL": {
+      "identicalPolygons": false,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 1.9537074444011446e-06
+    },
+    "Gerber_BottomLayer.GBL": {
+      "identicalPolygons": true,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 0.0
+    },
+    "Gerber_InnerLayer1.G1": {
+      "identicalPolygons": true,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 0.0
+    },
+    "Gerber_InnerLayer2.G2": {
+      "identicalPolygons": false,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 9.987852262598774e-07
+    },
+    "Gerber_TopSolderMaskLayer.GTS": {
+      "identicalPolygons": false,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 2.3903876996923164e-06
+    },
+    "Gerber_BottomSolderMaskLayer.GBS": {
+      "identicalPolygons": true,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 0.0
+    },
+    "Gerber_TopPasteMaskLayer.GTP": {
+      "identicalPolygons": false,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 2.599995998309261e-06
+    },
+    "Gerber_BottomPasteMaskLayer.GBP": {
+      "identicalPolygons": true,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 0.0
+    },
+    "Gerber_BoardOutlineLayer.GKO": {
+      "identicalPolygons": true,
+      "equivalentWithinMm": 2e-06,
+      "twoNanometreCheckPassed": true,
+      "symmetricDifferenceMm2": 0.0
+    }
+  },
+  "drillChecks": {
+    "Drill_PTH_Through.DRL": {
+      "objectCount": 163,
+      "equivalentWithinMm": 2e-06,
+      "passed": true
+    },
+    "Drill_NPTH_Through.DRL": {
+      "objectCount": 6,
+      "equivalentWithinMm": 2e-06,
+      "passed": true
+    },
+    "Drill_PTH_Through_Via.DRL": {
+      "objectCount": 159,
+      "equivalentWithinMm": 2e-06,
+      "passed": true
+    }
+  },
+  "actualExportAllPadsAndComponentsExactlyMatch": true,
+  "auditedNativeFileSha256": "19064d636629a8e46e192f3ad8c55777807b604bbddb1b6e04d9e4ec7b6cd350",
+  "manufacturingGerberSha256": "96a5f30028c63ef139e87c5d2f877ac57d4bdfe404df501eaca7d3eec85f4062",
+  "reloadedGerberVerificationSha256": "18e8109d0cf85eca3188a4ee8ea361de83a1572aed2c05a856db600d5eb44555",
+  "note": "The delivered manufacturing ZIP is the exact simulated ZIP. The reloaded native export differs only by unused apertures and floating serialization within 2 nm; its full component/pad FPT data is identical. The D2 project footprint was corrected and verified after a complete application restart."
+}

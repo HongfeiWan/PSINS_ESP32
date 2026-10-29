@@ -1,0 +1,6 @@
+﻿case,extraction,minimumReturnLossDb,maximumInsertionLossDb,residualEnergyDb,target15dBPassed,prototypeReference10dBPassed,insertionWith005dBEngineeringAllowancePassed,allNumericalChecksPassed
+r2b-via-c100,loaded single-excitation column,14.419733743174671,0.2083184692269961,-67.92,False,True,True,True
+r2b-via-f065,loaded single-excitation column,14.574683178016008,0.20192213187003272,-68.64,False,True,True,True
+r2b-via-reverse-f065,loaded single-excitation column,14.570158869308266,0.2022402033177354,-67.95,False,True,True,True
+r2b-via-corner-c100,loaded single-excitation column,12.252955163340717,0.315442418203957,-66.41,False,True,True,True
+r2b-via-domain-c100,loaded single-excitation column,14.419822746694113,0.20862855220087262,-68.05,False,True,True,True

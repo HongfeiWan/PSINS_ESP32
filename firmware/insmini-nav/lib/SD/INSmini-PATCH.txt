@@ -1,0 +1,2 @@
+Arduino-ESP32 bundled SD library, framework package 3.20017.241212+sha.dcc1105b (Arduino 2.0.17)
+Only add vTaskDelay(1) after completed sector data+CRC read and completed write data response in sdReadBytes/sdWriteBytes. Keep 1 MHz SPI, 512-byte writes, timeouts, CRC and watchdog unchanged. Project-local override; global framework unchanged.

@@ -1,0 +1,22 @@
+{
+  "upstream": "psins260705.rar/vc60/PSINSCore",
+  "changes": [
+    "Disable desktop file I/O and console UART macros only",
+    "Guard unused file-based CInterp constructor with PSINS_IO_FILE",
+    "Matrix capacity 40 to 15, matching only the active 15-state / 6-measurement ESP32 filter; original desktop archive unchanged",
+    "Use 8-byte class alignment for double/pointer portability (desktop file I/O disabled)",
+    "Avoid forming conefactors[-1] pointer in the single-sample IMU branch; numeric coefficients unchanged"
+  ],
+  "files": [
+    {
+      "name": "PSINS.h",
+      "originalSha256": "fe9e234ed0cf6bffab902f3e44edb9222b88e9dace727bac35b1d01c78ce64ab",
+      "portSha256": "3c8c335fc0bcce813c46ba35dda117b9333813f4dfc13524f99df9aea13dc362"
+    },
+    {
+      "name": "PSINS.cpp",
+      "originalSha256": "c8bb0010f59ac4d512039241eb157fbd116a2a205568ad46d92419fbc5656901",
+      "portSha256": "e57c775abe6e2d2dc05db50ba1302342b7fb6a7c4e665371c6302b5f0eb2c8bf"
+    }
+  ]
+}

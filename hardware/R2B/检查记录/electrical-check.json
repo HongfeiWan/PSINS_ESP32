@@ -1,0 +1,1906 @@
+{
+  "componentCount": 53,
+  "connectedSchPins": 194,
+  "noConnectSchPins": 25,
+  "mismatches": [],
+  "attributeDifferences": [
+    [
+      "U1",
+      {
+        "Unique ID": [
+          "gge1",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "ESPRESSIF(乐鑫)",
+          null
+        ],
+        "Manufacturer Part": [
+          "ESP32-S3-WROOM-1-N8",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C2913198",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "2.4GHz",
+          null
+        ]
+      }
+    ],
+    [
+      "J1",
+      {
+        "Unique ID": [
+          "gge2",
+          null
+        ],
+        "Manufacturer": [
+          "韩国韩荣",
+          null
+        ],
+        "Manufacturer Part": [
+          "TYPE-C-31-M-12",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C165948",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "U5",
+      {
+        "Unique ID": [
+          "gge3",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "ST(意法半导体)",
+          null
+        ],
+        "Manufacturer Part": [
+          "USBLC6-2SC6",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C7519",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "R1",
+      {
+        "Unique ID": [
+          "gge4",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF5101T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C23186",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "5.1kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R2",
+      {
+        "Unique ID": [
+          "gge5",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF5101T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C23186",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "5.1kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R3",
+      {
+        "Unique ID": [
+          "gge6",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF220JT5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C23345",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22Ω",
+          null
+        ]
+      }
+    ],
+    [
+      "R4",
+      {
+        "Unique ID": [
+          "gge7",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF220JT5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C23345",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22Ω",
+          null
+        ]
+      }
+    ],
+    [
+      "R5",
+      {
+        "Unique ID": [
+          "gge8",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R6",
+      {
+        "Unique ID": [
+          "gge11",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "C1",
+      {
+        "Unique ID": [
+          "gge9",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL10A105KB8NNNC",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C15849",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "1uF",
+          null
+        ]
+      }
+    ],
+    [
+      "SW1",
+      {
+        "Unique ID": [
+          "gge10",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "XUNPU(讯普)",
+          null
+        ],
+        "Manufacturer Part": [
+          "TS-1088-AR02016",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C720477",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "SW2",
+      {
+        "Unique ID": [
+          "gge12",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "XUNPU(讯普)",
+          null
+        ],
+        "Manufacturer Part": [
+          "TS-1088-AR02016",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C720477",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "C2",
+      {
+        "Unique ID": [
+          "gge13",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C3",
+      {
+        "Unique ID": [
+          "gge14",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "R7",
+      {
+        "Unique ID": [
+          "gge15",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1001T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C21190",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "1kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "D1",
+      {
+        "Unique ID": [
+          "gge16",
+          null
+        ],
+        "Manufacturer": [
+          "KENTO",
+          null
+        ],
+        "Manufacturer Part": [
+          "KT-0603R",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C2286",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "U4",
+      {
+        "Unique ID": [
+          "gge29",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "Silergy(矽力杰)",
+          null
+        ],
+        "Manufacturer Part": [
+          "SY8089AAAC",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C78988",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "L1",
+      {
+        "Unique ID": [
+          "gge30",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "cjiang(长江微电)",
+          null
+        ],
+        "Manufacturer Part": [
+          "FNR4020S2R2MT",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C167825",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "2.2uH",
+          null
+        ]
+      }
+    ],
+    [
+      "C10",
+      {
+        "Unique ID": [
+          "gge32",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "C14",
+      {
+        "Unique ID": [
+          "gge39",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "C11",
+      {
+        "Unique ID": [
+          "gge33",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C12",
+      {
+        "Unique ID": [
+          "gge34",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C13",
+      {
+        "Unique ID": [
+          "gge38",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C9",
+      {
+        "Unique ID": [
+          "gge31",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "R9",
+      {
+        "Unique ID": [
+          "gge35",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1003T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25803",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R10",
+      {
+        "Unique ID": [
+          "gge36",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF2202T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C31850",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "J2",
+      {
+        "Unique ID": [
+          "gge37",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "SHOU HAN(首韩)",
+          null
+        ],
+        "Manufacturer Part": [
+          "TF-CARD H1.8",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C7529389",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "R11",
+      {
+        "Unique ID": [
+          "gge40",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R12",
+      {
+        "Unique ID": [
+          "gge41",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R13",
+      {
+        "Unique ID": [
+          "gge42",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R14",
+      {
+        "Unique ID": [
+          "gge43",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R15",
+      {
+        "Unique ID": [
+          "gge44",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "R16",
+      {
+        "Unique ID": [
+          "gge45",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "U2",
+      {
+        "Unique ID": [
+          "gge17",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "ST(意法半导体)",
+          null
+        ],
+        "Manufacturer Part": [
+          "LSM6DS3TR-C",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C967633",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "FB1",
+      {
+        "Unique ID": [
+          "gge18",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "Sunlord(顺络)",
+          null
+        ],
+        "Manufacturer Part": [
+          "GZ1608D601TF",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C1002",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "FB2",
+      {
+        "Unique ID": [
+          "gge26",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "Sunlord(顺络)",
+          null
+        ],
+        "Manufacturer Part": [
+          "GZ1608D601TF",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C1002",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "C4",
+      {
+        "Unique ID": [
+          "gge19",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL10A105KB8NNNC",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C15849",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "1uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C5",
+      {
+        "Unique ID": [
+          "gge20",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "C6",
+      {
+        "Unique ID": [
+          "gge21",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "C8",
+      {
+        "Unique ID": [
+          "gge28",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "R8",
+      {
+        "Unique ID": [
+          "gge22",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "U3",
+      {
+        "Unique ID": [
+          "gge23",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "杭州中科微",
+          null
+        ],
+        "Manufacturer Part": [
+          "ATGM336H-5N31",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C90770",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "J3",
+      {
+        "Unique ID": [
+          "gge24",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "HRS(广濑)",
+          null
+        ],
+        "Manufacturer Part": [
+          "U.FL-R-SMT-1(80)",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C88374",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "6GHz",
+          null
+        ]
+      }
+    ],
+    [
+      "L2",
+      {
+        "Unique ID": [
+          "gge25",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "muRata(村田)",
+          null
+        ],
+        "Manufacturer Part": [
+          "LQW15AN47NJ00D",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C192855",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "47nH",
+          null
+        ]
+      }
+    ],
+    [
+      "C7",
+      {
+        "Unique ID": [
+          "gge27",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL21A226MAQNNNE",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C45783",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "22uF",
+          null
+        ]
+      }
+    ],
+    [
+      "R17",
+      {
+        "Unique ID": [
+          "gge47",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "UNI-ROYAL(厚声)",
+          null
+        ],
+        "Manufacturer Part": [
+          "0603WAF1002T5E",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C25804",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "10kΩ",
+          null
+        ]
+      }
+    ],
+    [
+      "J4",
+      {
+        "Unique ID": [
+          "gge46",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "JST",
+          null
+        ],
+        "Manufacturer Part": [
+          "SM10B-SRSS-TB(LF)(SN)",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C160409",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "U6",
+      {
+        "Unique ID": [
+          "gge48",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "MICRONE(南京微盟)",
+          null
+        ],
+        "Manufacturer Part": [
+          "ME6211C33M5G-N",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C82942",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ],
+    [
+      "C15",
+      {
+        "Unique ID": [
+          "gge49",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL10A105KB8NNNC",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C15849",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "1uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C16",
+      {
+        "Unique ID": [
+          "gge50",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "SAMSUNG(三星)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CL10A105KB8NNNC",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C15849",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "1uF",
+          null
+        ]
+      }
+    ],
+    [
+      "C17",
+      {
+        "Unique ID": [
+          "gge52",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "C18",
+      {
+        "Unique ID": [
+          "gge53",
+          null
+        ],
+        "Name": [
+          "={Value}",
+          null
+        ],
+        "Manufacturer": [
+          "YAGEO(国巨)",
+          null
+        ],
+        "Manufacturer Part": [
+          "CC0603KRX7R9BB104",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C14663",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ],
+        "Value": [
+          "100nF",
+          null
+        ]
+      }
+    ],
+    [
+      "D2",
+      {
+        "Unique ID": [
+          "gge51",
+          null
+        ],
+        "Name": [
+          "={Manufacturer Part}",
+          null
+        ],
+        "Manufacturer": [
+          "TI(德州仪器)",
+          null
+        ],
+        "Manufacturer Part": [
+          "TPD1E0B04DPYR",
+          null
+        ],
+        "Supplier": [
+          "LCSC",
+          null
+        ],
+        "Supplier Part": [
+          "C1975594",
+          null
+        ],
+        "Add into BOM": [
+          "yes",
+          null
+        ]
+      }
+    ]
+  ],
+  "sourceAuditSha256": "19064d636629a8e46e192f3ad8c55777807b604bbddb1b6e04d9e4ec7b6cd350"
+}
